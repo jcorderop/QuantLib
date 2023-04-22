@@ -59,19 +59,6 @@ async def load_config() -> None:
     await azure_scheme.openid_config.load_config()
 
 
-'''
-{
-  "calculation_date": "2023-04-22",
-  "maturity_date": "2024-04-22",
-  "spot_price": 127.62,
-  "strike_price": 130.0,
-  "volatility": 0.20,
-  "dividend_rate": 0.0163,
-  "risk_free_rate": 0.001,
-  "option_type": "call",
-  "exercise_type": "european"
-}
-'''
 @app.post("/option/calculation", dependencies=[Security(azure_scheme)])
 async def vanilla(option_request: OptionRequest):
     return {'price': vanilla_option_calculation(option_request)}
