@@ -1,0 +1,8 @@
+QuantLib
+pandas
+pydantic
+python-dotenv
+python-dateutil
+uvicorn
+fastapi
+fastapi_azure_auth
