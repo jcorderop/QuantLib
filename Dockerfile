@@ -1,9 +1,9 @@
 FROM python:3.9-slim
-WORKDIR /usr/src/app
+WORKDIR /usr/src
 COPY . .
 RUN python -m pip install --upgrade pip
 RUN pip install pipenv
 RUN pipenv install
-RUN pip install -r requirements.txt --src /usr/src/app
+RUN pip install -r requirements.txt --src /usr/src
 EXPOSE 8000
-ENTRYPOINT ["pipenv", "run", "python", "main.py"]
+ENTRYPOINT ["python", "-m", "app.main"]

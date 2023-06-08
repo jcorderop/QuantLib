@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oepfelbaum IT Management AG</title>
+    <style>
+        div#object-wrapper {
+            width: 800px;
+            margin: 0 auto;
+            border: 0;
+        }
+
+        div#link-wrapper object {
+            height: 100%;
+            width: 800px;
+            position: absolute;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="object-wrapper">
+        README
+    </div>
+</body>
+</html>
