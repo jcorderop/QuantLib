@@ -3,12 +3,6 @@
 ---
 ## Project Set-up
 
-### Clone from GitHub the Project
-
-```
-    https://github.com/Oepfelbaum/oe_trading_api.git
-```
-
 ### Configure Interpreter
 ![Interpreter.png](img/Interpreter.png)
 
@@ -59,11 +53,6 @@
 ---
 ## Docker
 
-### Prerequisites
-
-* If you have already installed dockers review for upgrades to have the latest version.
-* If you have to install dockers, go to: https://oepfelbaum.atlassian.net/wiki/spaces/TR/pages/3305177143/Set-up+Docker
-
 ### Create docker image and deploy container locally
 
 To build an image with name oe/oe_trading_api 
@@ -107,8 +96,6 @@ The following file automates the manual process described above.
 #### Prerequisites: 
 
 * To log in to Azure you will require an Azure Principal.
-* How-to use an Azure principal from local, go to: https://oepfelbaum.atlassian.net/wiki/spaces/TR/pages/3326869506/Create+Principal+to+Push+Docker+Images
-* To login to Azure -> https://oepfelbaum.atlassian.net/wiki/spaces/TR/pages/3326607386/Publish+a+Docker+Image+into+Azure+from+Local
 
 ```
     run docker_azure_image.bat
@@ -119,11 +106,11 @@ The following file automates the manual process described above.
 Example using the repository id **60ffe99fb481a4dc99759af0626da79a616bd18d**
 
 ```
-    docker pull oeappsregistry.azurecr.io/oe_trading_api:60ffe99fb481a4dc99759af0626da79a616bd18d
+    docker pull <app-service>.azurecr.io/oe_trading_api:60ffe99fb481a4dc99759af0626da79a616bd18d
 ```
 
 Running container using image pulled before
 
 ```
-    docker run -d --name oe_trading_api -p 8000:8000 oeappsregistry.azurecr.io/oe_trading_api:60ffe99fb481a4dc99759af0626da79a616bd18d
+    docker run -d --name oe_trading_api -p 8000:8000 <app-service>.azurecr.io/oe_trading_api:60ffe99fb481a4dc99759af0626da79a616bd18d
 ```

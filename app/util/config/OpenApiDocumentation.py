@@ -24,25 +24,16 @@ API_PREFIX = '/api/v1'
 
 
 DESCRIPTION = """
-Oepfelbaum API main goal is to gather and share knowledge. 🚀
-
-## Items
-
-* Vanilla Option Pricer **European** and **American**.
-
-## Contributors
-
-* **Create users** (_not implemented_).
-* **Read users** (_not implemented_).
+API main goal is to gather and share knowledge. 🚀
 """
 
-TITLE = "Oepfelbaum IT Management AG"
+TITLE = "jcorderop"
 VERSION = API_VERSION
-TERMS_OF_SERVICES = "https://www.oepfelbaum.com/#personen"
+TERMS_OF_SERVICES = "https://www.linkedin.com/in/jorgecorderopalacios/"
 CONTACT = {
-        "name": "Oepfelbaum Team",
-        "url": "https://www.oepfelbaum.com/#kontakt",
-        "email": "info@oepfelbaum.com",
+        "name": "Team",
+        "url": "https://www.linkedin.com/in/jorgecorderopalacios/",
+        "email": "jorge.corderopalacios@gmail.com",
     }
 LICENSE_INFO = {
         "name": f'License: {LICENSE}',
